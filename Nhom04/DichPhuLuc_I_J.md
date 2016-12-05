@@ -40,7 +40,7 @@ Hệ thống cho phép người dùng đặt một số loại phân tích để
 Hệ thống cho phép một số ví dụ về khoảng max/min speed ở bảng 6. Kết quả ngoài khoảng này là không hợp lệ.
 Hệ thống sẽ hiển thị một số kết quả dựa vào việc tìm kiếm “Accepted”, “Warnig”, “Alarm”. Giá trị được đưa ra ở bảng 6.
 
- | Loại | Phạm vi đo lường | Chấp nhận lớn nhất | Cảnh báo lớn nhất | Giá mẫu |
+| Loại | Phạm vi đo lường | Chấp nhận lớn nhất | Cảnh báo lớn nhất | Giá mẫu |
 | --------- | ---- | ------- | ---------------- | ---------- |
 | NCS | 2 - 315 incl | 65 | 270 | 0.35€ |
 | C2O | 0.01 - 0.89 incl | 0.3 | 0.65 | 0.40€ |
