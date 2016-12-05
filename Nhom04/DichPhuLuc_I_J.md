@@ -1,4 +1,5 @@
 #Phần I: Đặc tả thiết kế kiểm thử
+
 **Thiết kế kiểm thử**
 Hệ thống của chúng tôi có các chức năng sau:
 •	Administrator
@@ -6,24 +7,35 @@ Hệ thống của chúng tôi có các chức năng sau:
 •	Truy cập trên web-site
 •	Phàn nàn
 Trong trường hợp kiểm thử, các tài liệu nên được sắp xếp theo chức năng. Các điều kiện kiểm thử sau các thẻ tài liệu, cái mà mô tả tiêu chuẩn chấp nhận của tài liệu, nên được bao phủ.
+
 **Đặc tả thiết kế kiểm thử**
 Để làm cho dễ hiểu hơn, đặc tả thiết kế kiểm thử dựa vào cơ sở nào, một trích đoạn yêu cầu hệ thống cho các phần PC của UV/TIT-14 33a được đưa vào đây.
+
 ##Đặc tả yêu cầu hệ thống cho các phần PC của UV/TIT – 14 33a
+
 ###4.1	Cài đặt
+
 Hệ thống sẽ có một menu cài đặt với các lựa chọn sau:
 + Cài đặt băng tải
 + Cài đặt hiệu chuẩn
 + …
+
 ###4.2	Cài đặt băng tải
+
 **4.2.1. Các thông số sau cần phải cài đặt:**
+
 + Max speed (mm/s)
 + Min speed (mm/s)
+
 **4.2.2. Sau khi thực hiện thay đổi cài đặt, hệ thống sẽ hiển thị một trong các thông báo sau:**
+
 + Setup done
 + Max speed ngoài khoảng cho phép
 + Min speed ngoài khoảng cho phép
 Hệ thống cho phép người dùng thoát khỏi việc cài đặt mà không thay đổi thông tin gì.
+
 ###4.8 Phân tích
+
 Hệ thống cho phép người dùng đặt một số loại phân tích để thực hiện. Các loại phân tích được đưa ra ở bảng 6.
 Hệ thống cho phép một số ví dụ về khoảng max/min speed ở bảng 6. Kết quả ngoài khoảng này là không hợp lệ.
 Hệ thống sẽ hiển thị một số kết quả dựa vào việc tìm kiếm “Accepted”, “Warnig”, “Alarm”. Giá trị được đưa ra ở bảng 6.
@@ -70,8 +82,10 @@ Bảng điều khiển gồm các nút sau:
 ##Đặc tả thiết kế kiểm thử cho các phần PC của UV/TIT – 14 33a
 
 ###1.	Giới thiệu
+
 **1.2.	Mục đích:**
 Mục đích của phần đặc tả kiểm thử là để cung cấp một cái nhìn tổng quan về cái gì sẽ được kiểm thử khi kiểm thử hệ thống.
+
 **1.3.	Tài liệu tham khảo:** 
 
 | STT | Mô tả | ID |
@@ -79,6 +93,7 @@ Mục đích của phần đặc tả kiểm thử là để cung cấp một c�
 |	[1] | Yêu cầu hệ thống, kiểm thử cơ bản | Requirements Specification for PC part of UV/TIT-14 33a.; Vers. 1.8 |
 
 ###2.	Bộ tính năng
+
 Chương này sẽ mô tả về cấu trúc tổng quan về kiểm thử hệ thống của PCUV, trong đó, kiểm thử sẽ được chia nhỏ thành các bộ tính năng (Feature Sets) tổng quan.
 Các thông tin sau được cung cấp cho mỗi bộ tính năng:
 
@@ -98,7 +113,9 @@ Phần kiểm thử này được chia ra thành các bộ tính năng như sau:
 3. (FS2) Xác định các thành phần
 4. (FS3) Mật độ của các thành phần (UV + sự kiểm soát của buret)
 5. (FS6) Sự điều khiển của hệ thống băng chuyền
+
 	**Bộ tính năng (FS1): Thiết lập hệ thống**
+
 -	Mục tiêu: Để kiểm thử sự thiết lập của hệ thống, bao gồm vận chuyển thông tin và báo cáo về sự hiệu chuẩn
 -	Độ ưu tiên: Trên trung bình
 -	Cách tiếp cận: Kiểm thử cấu trúc của danh mục, kiểm thử yêu cầu đơn giản (Có/Không), các phương pháp phân vùng tương đương và phân tích giá trị biên
@@ -114,12 +131,17 @@ Bộ tính năng (FS6): Sự điều khiển của hệ thống băng chuyền
 -	Độ ưu tiên: Dưới trung bình
 -	Cách tiếp cận: ..., kiểm thử chuyển đổi trạng thái, ... 
 -	Khả năng lần vết: [581] ...
+
 ###3.	Các điều kiện kiểm thử
+
 Trong chương này, Các điều kiện kiểm thử cho mỗi bộ tính năng được diễn tả.
+
 **3.3 Bộ tính năng (FS2): xác định các thành phần**
 
 Bộ tính năng này bao gồm các yêu cầu liên quan đến việc xác định và báo cáo của các thành phần. Các tính năng thiết lập có một số điều kiện được bố trí trong tiểu mục tương ứng với các yêu cầu liên quan.
+
 *3.3.7 Các điều kiện kiểm thử cho khoảng biên*
+
 Các điều kiện kiểm thử cho khoảng biên có thể được biểu diễn bằng một cây phân loại đơn giản (tương tự như phân vùng tương đương) và phân tích giá trị biên liên quan. Tất cả những điều kiện kiểm thử này có thể được truy nguồn từ các yêu cầu tương tự, và chúng có cùng độ ưu tiên.
 Các yêu cầu được bao phủ:
 
@@ -135,8 +157,11 @@ Các yêu cầu được bao phủ:
 Các điều kiện kiểm thử cho việc xác định các phương pháp phân tích từ số mẫu có thể được thể hiện bằng cách sử dụng cây phân loại. Tất cả những điều kiện kiểm thử này có thể được truy nguồn từ các yêu cầu tương tự.
 
 **3.5.  Bộ tính năng (FS6): kiểm soát các hệ thống băng tải**
+
 Bộ tính năng này bao gồm các yêu cầu liên quan đến các hệ thống băng tải, bao gồm tốc độ, bắt đầu chính xác và vị trí dừng lại, thao tác đóng gói v.v… Các bộ tính năng có một số điều kiện được bố trí trong tiểu mục tương ứng với các yêu cầu liên quan.
+
 *3.5.2 Các điều kiện kiểm thử cho thao tác đóng gói*
+
 Các thao tác đóng gói có thể được minh họa trong sơ đồ máy trạng thái, nơi mà các trạng thái và các hiệu ứng được đánh số, và sự kiện “P” có thể được hiều như là sự ấn dấu.
  
 
@@ -156,10 +181,15 @@ Các mục kiểm thử bao phủ và các trường hợp kiểm thử cho mộ
 +	Thư kí có thể thay đổi tên, độ dài, giá cả cho một loại hình đăng kí đến chừng nào nó chưa có.
 +	Thư kí có thể hủy các thay đổi của loại hình đăng kí trước khi nó được lưu trữ.
 +	Thứ kí có thể lưu các thay đổi cho một loại hình đăng kí.
+
 ##Đặc tả ca kiểm thử cho máy tính của UV/TIT-14 33a
+
 ###1.	Giới thiệu
+
 **1.2.	Mục đích**
+
 Mục đích của phần này là liệt kê các trường hợp kiểm thử bắt nguồn từ các điều kiện kiểm thử.
+
 **1.3.	Tài liệu tham khảo**
 
 | Số tham chiếu | Mô tả | ID |
@@ -186,15 +216,19 @@ Có 3 phân vùng tương đương hợp lệ và 6 ranh giới hợp lệ.
 Các mục bao phủ là lá trong cây phân loại trong phần 3.3.8 trong [2]. Các tên miền con được in đậm. Có 10 lá có hiệu lực.
 
 **2.5 Bộ tính năng (FS6): Điều khiển hệ thống băng chuyền**
+
 *2.5.2. Mục bao phủ cho hoạt động mở nắp (Lid Operation)*
+
 Để bao phủ Chow’s 0-switch của nhà máy trong FS6 .11.1 trong [2] có 6 sự biến chuyển sau đây: 
  
 Các biến chuyển rỗng sẽ được xác định trong bản sau (in đậm):
  
 ###3.	Các ca kiểm thử
+
 Phần này mô tả các trường hợp kiểm thử từ các mục kiểm thử bao phủ ở trên.
 
 **3.3. Bộ tính năng (FS2): Xác định các hợp chất**
+
 *3.3.7. Phạm vi đo lường*
 
 
