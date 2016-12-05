@@ -37,11 +37,13 @@ Hệ thống sẽ hiển thị một số kết quả dựa vào việc tìm ki�
 Hệ thống sẽ chắc chắn rẳng định dạng của các ví dụ dưới đây là đúng trước khi một ví dụ được thực hiện.
 Sample no. = T”–“n[n]”-“nnn”-“dd”.”mm“.“yy 
 Where:
- T = “A” | “S” | “M” 
- n = numbers from 0 – 9 
- dd = numbers from 01 – 31 
- mm = numbers from 01 – 12 
- yy = numbers from 00 – 99
+
+- T = “A” | “S” | “M” 
+- n = numbers from 0 – 9 
+- dd = numbers from 01 – 31 
+- mm = numbers from 01 – 12 
+- yy = numbers from 00 – 99
+
 Hệ thống sẽ chấp nhận một số ví dụ bao gồm 4 phần chia bởi dấu gạch nối, tên tương ứng là:
 •	Action type (A, S hoặc M)
 •	Sample type (1 hoặc 2 chữ số)
@@ -54,7 +56,9 @@ Khi tự động phân tích được thực hiện và kết quả đặt dư�
 Để có thể chạy phân tích tự động, id cần được tìm thấy trong CSDL.
 Trường hợp thủ công, người dùng chọn từng bước một cách rõ ràng. Người dùng phải viết báo cáo với kết quả bằng văn bản, cái mà được in ra khi phân tích kết thúc.
 ###4.13 Hoạt động mở nắp (Lid Operation)
+
 **4.13.1 Một trong các biến thể của sản phẩm sẽ được trang bị một lắp (lid) để bảo vệ các kỹ thuật thực hiện phân tích.**
+
 Lắp sẽ che phần băng chuyền khi nó hoạt động. Lắp phải được khóa lại trước khi băng chuyền bắt đầu và không thể được mở ra trước khi băng chuyền dừng hoàn toàn. Hai cảm biến được thiết lập để phát hiện nếu lắp được đóng và nếu băng chuyền đang chuyển động. 
 Khi mà lắp còn bị khóa thì có thể bắt đầu di chuyển băng chuyền về phí trước hoặc phía sau. Để thay đổi hướng cần phải dừng băng chuyền lại trước, tuy nhiên không cần thiết phải mởi lắp.
 Bảng điều khiển gồm các nút sau:
@@ -69,6 +73,7 @@ Bảng điều khiển gồm các nút sau:
 **1.2.	Mục đích:**
 Mục đích của phần đặc tả kiểm thử là để cung cấp một cái nhìn tổng quan về cái gì sẽ được kiểm thử khi kiểm thử hệ thống.
 **1.3.	Tài liệu tham khảo:** 
+
 | STT | Mô tả | ID |
 | --------- | ---- | ------- |
 |	[1] | Yêu cầu hệ thống, kiểm thử cơ bản | Requirements Specification for PC part of UV/TIT-14 33a.; Vers. 1.8 |
@@ -112,10 +117,13 @@ Bộ tính năng (FS6): Sự điều khiển của hệ thống băng chuyền
 ###3.	Các điều kiện kiểm thử
 Trong chương này, Các điều kiện kiểm thử cho mỗi bộ tính năng được diễn tả.
 **3.3 Bộ tính năng (FS2): xác định các thành phần**
+
 Bộ tính năng này bao gồm các yêu cầu liên quan đến việc xác định và báo cáo của các thành phần. Các tính năng thiết lập có một số điều kiện được bố trí trong tiểu mục tương ứng với các yêu cầu liên quan.
 *3.3.7 Các điều kiện kiểm thử cho khoảng biên*
 Các điều kiện kiểm thử cho khoảng biên có thể được biểu diễn bằng một cây phân loại đơn giản (tương tự như phân vùng tương đương) và phân tích giá trị biên liên quan. Tất cả những điều kiện kiểm thử này có thể được truy nguồn từ các yêu cầu tương tự, và chúng có cùng độ ưu tiên.
 Các yêu cầu được bao phủ:
+
+
 | Các yêu cầu được bao phủ: [324-NCS], [325-NCS]|| Ưu tiên: khoảng giữa ||
 | --------- | ---- | ------- | ---------------- |
 | | Nhập vào|  |  |
@@ -203,6 +211,7 @@ Phần này mô tả các trường hợp kiểm thử từ các mục kiểm th
 | Kết quả dự kiến: | 	Màn hình hiển thị “Cảnh báo”
 
 3.3.8. Phương pháp phân tích
+
 |  Test Case ID: 21-3 | 	Mục đích: Kiểm tra phân tích tự động của loại 1
 | --------- | ---------------- |
 | Điều kiện tiên quyết: | 	Cơ sở dữ liệu phải bao gồm: Một mẫu loại 1 với các bước thích hợp và một ID mẫu của 314.
