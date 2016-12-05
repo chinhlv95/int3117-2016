@@ -46,6 +46,7 @@ Hệ thống sẽ hiển thị một số kết quả dựa vào việc tìm ki�
 | C2O | 0.01 - 0.89 incl | 0.3 | 0.65 | 0.40€
 | NCS | 2 - 315 incl | 65 | 270 | 0.35€
 | NCS | 2 - 315 incl | 65 | 270 | 0.35€
+
 Hệ thống sẽ chắc chắn rẳng định dạng của các ví dụ dưới đây là đúng trước khi một ví dụ được thực hiện.
 Sample no. = T”–“n[n]”-“nnn”-“dd”.”mm“.“yy 
 Where:
