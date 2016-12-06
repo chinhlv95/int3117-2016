@@ -3,10 +3,12 @@
 **Thiết kế kiểm thử**
 
 Hệ thống của chúng tôi có các chức năng sau:
-•	Administrator
-•	Đăng ký và mở rộng
-•	Truy cập trên web-site
-•	Phàn nàn
+
+-	Administrator
+-	Đăng ký và mở rộng
+-	Truy cập trên web-site
+-	Phàn nàn
+
 Trong trường hợp kiểm thử, các tài liệu nên được sắp xếp theo chức năng. Các điều kiện kiểm thử sau các thẻ tài liệu, cái mà mô tả tiêu chuẩn chấp nhận của tài liệu, nên được bao phủ.
 
 **Đặc tả thiết kế kiểm thử**
