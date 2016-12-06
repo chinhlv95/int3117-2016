@@ -86,6 +86,7 @@ Bảng điều khiển gồm các nút sau:
 - Tiến 
 - Lùi
 - Dừng
+
 ##Đặc tả thiết kế kiểm thử cho các phần PC của UV/TIT – 14 33a
 
 ###1.	Giới thiệu
