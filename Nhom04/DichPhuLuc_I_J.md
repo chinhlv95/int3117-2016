@@ -1,6 +1,7 @@
 #Phần I: Đặc tả thiết kế kiểm thử
 
 **Thiết kế kiểm thử**
+
 Hệ thống của chúng tôi có các chức năng sau:
 •	Administrator
 •	Đăng ký và mở rộng
@@ -9,6 +10,7 @@ Hệ thống của chúng tôi có các chức năng sau:
 Trong trường hợp kiểm thử, các tài liệu nên được sắp xếp theo chức năng. Các điều kiện kiểm thử sau các thẻ tài liệu, cái mà mô tả tiêu chuẩn chấp nhận của tài liệu, nên được bao phủ.
 
 **Đặc tả thiết kế kiểm thử**
+
 Để làm cho dễ hiểu hơn, đặc tả thiết kế kiểm thử dựa vào cơ sở nào, một trích đoạn yêu cầu hệ thống cho các phần PC của UV/TIT-14 33a được đưa vào đây.
 
 ##Đặc tả yêu cầu hệ thống cho các phần PC của UV/TIT – 14 33a
@@ -58,10 +60,12 @@ Where:
 - yy = numbers from 00 – 99
 
 Hệ thống sẽ chấp nhận một số ví dụ bao gồm 4 phần chia bởi dấu gạch nối, tên tương ứng là:
-•	Action type (A, S hoặc M)
-•	Sample type (1 hoặc 2 chữ số)
-•	Sample id (3 chữ số)
-•	Ngày mà ví dụ được lấy
+
+- Action type (A, S hoặc M)
+- Sample type (1 hoặc 2 chữ số)
+- Sample id (3 chữ số)
+- Ngày mà ví dụ được lấy
+
 Giải thích:
 Khi ví dụ được nhập vào máy, máy đọc số nhưng bỏ qua thông tin ngày.
 Cách mà máy xem xét ví dụ phụ thuộc vào “action type”. Trong trường hợp tự động sử lý một vị trí để in báo cáo, trong khi 2 vị trí cho 0 báo cáo. Để tự động sử lý, sample type xác định cách phân tích được thực hiện. Sample type không quan trọng trong trường hợp phân tích thủ công.
@@ -109,25 +113,31 @@ Các thông tin sau được cung cấp cho mỗi bộ tính năng:
    trong [1]
 
 Phần kiểm thử này được chia ra thành các bộ tính năng như sau:
+
 1. (FS1) Thiết lập hệ thống
 2. (FS4) Hiệu chuẩn UV, IR và Buret
 3. (FS2) Xác định các thành phần
 4. (FS3) Mật độ của các thành phần (UV + sự kiểm soát của buret)
 5. (FS6) Sự điều khiển của hệ thống băng chuyền
 
-	**Bộ tính năng (FS1): Thiết lập hệ thống**
+**Bộ tính năng (FS1): Thiết lập hệ thống**
 
 -	Mục tiêu: Để kiểm thử sự thiết lập của hệ thống, bao gồm vận chuyển thông tin và báo cáo về sự hiệu chuẩn
 -	Độ ưu tiên: Trên trung bình
 -	Cách tiếp cận: Kiểm thử cấu trúc của danh mục, kiểm thử yêu cầu đơn giản (Có/Không), các phương pháp phân vùng tương đương và phân tích giá trị biên
 -	Khả năng lần vết: [22], [34], [35], [36], [37], ...
-Bộ tính năng (FS2): Xác định các thành phần
+
+**Bộ tính năng (FS2): Xác định các thành phần**
+
 -	Mục tiêu: Kiểm thử việc xác định và báo cáo của các thành phần.
 -	Độ ưu tiên: Cao 
 -	Cách tiếp cận: Kiểm thử yêu cầu đơn giản (Có/Không), phân vùng tương đương và phân tích giá trị biên, kiểm thử cú pháp và kiểm thử cây quyết định. 
 -	Khả năng lần vết: [324], [325], [326], [339], [341],...
-Bộ tính năng (FS3), Bộ tính năng (FS4), Bộ tính năng (FS5) : chưa hoàn tất
-Bộ tính năng (FS6): Sự điều khiển của hệ thống băng chuyền
+
+**Bộ tính năng (FS3), Bộ tính năng (FS4), Bộ tính năng (FS5) : chưa hoàn tất**
+
+**Bộ tính năng (FS6): Sự điều khiển của hệ thống băng chuyền**
+
 -	Mục tiêu: Để kiểm thử hệ thống băng chuyền, bao gồm, tốc độ, bắt đầu vào dừng đúng vị trí, sự hoạt động của lắp.
 -	Độ ưu tiên: Dưới trung bình
 -	Cách tiếp cận: ..., kiểm thử chuyển đổi trạng thái, ... 
@@ -155,6 +165,7 @@ Các yêu cầu được bao phủ:
 | (FS2).5.3 | 	| >315 | Ngoài khoảng |
 
 *3.3.8 Các điều kiện kiểm thử cho phương pháp phân tích*
+
 Các điều kiện kiểm thử cho việc xác định các phương pháp phân tích từ số mẫu có thể được thể hiện bằng cách sử dụng cây phân loại. Tất cả những điều kiện kiểm thử này có thể được truy nguồn từ các yêu cầu tương tự.
 
 **3.5.  Bộ tính năng (FS6): kiểm soát các hệ thống băng tải**
